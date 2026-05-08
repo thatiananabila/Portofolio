@@ -42,7 +42,7 @@ export default function App() {
             <img
               src={foto}
               alt="profile"
-              className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-[40px] border border-zinc-800 shadow-2xl"
+              className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-[40px] border-4 border-white shadow-2xl"
             />
           </div>
         </div>
@@ -201,7 +201,7 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="px-8 md:px-20 py-24">
-        <div className="bg-gradient-to-r from-rose-300/10 to-red-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
+        <div className="bg-gradient-to-r from-purple-300/10 to-blue-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
           <h2 className="text-4xl font-bold mb-6">
             Let’s Work Together
           </h2>
