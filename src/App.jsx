@@ -1,4 +1,7 @@
 import foto from './assets/Thatiana.png'
+import warungnasi from './assets/UMKM.png'
+import rumahsakit from './assets/rumahsakit.png'
+import dentalcare from './assets/dental.png'
 
 export default function App() {
   return (
@@ -223,68 +226,152 @@ export default function App() {
 </section>
 
       {/* PROJECTS */}
-      <section className="px-8 md:px-20 py-16">
-        <div className="flex items-center justify-between mb-10">
-          <h2 className="text-3xl font-bold">Projects</h2>
-          <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+<section className="px-8 md:px-20 py-16">
+  <div className="flex items-center justify-between mb-10">
+    <h2 className="text-3xl font-bold">Projects</h2>
+    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-8">
+
+    {/* WARUNG NASI */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300 hover:border-rose-300">
+
+      <img
+        src={warungnasi}
+        alt="Warung Nasi"
+        className="w-full h-52 object-cover"
+      />
+
+      <div className="p-6">
+        <p className="text-rose-300 text-sm mb-3">
+          UI/UX DESIGN
+        </p>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Warung Nasi Ibu Wati
+        </h3>
+
+        <p className="text-zinc-400 mb-6">
+          UI/UX design for UMKM food ordering system with user and admin interface.
+        </p>
+
+        <div className="flex gap-3 flex-wrap mb-6">
+          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+            Figma
+          </span>
+
+          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+            Mobile Design
+          </span>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-[32px] p-8 hover:scale-[1.02] transition duration-300 shadow-xl">
-            <p className="text-rose-300 text-sm mb-4">ERP SYSTEM</p>
+        <div className="flex gap-3">
+          <a
+            href="https://www.figma.com/proto/GGg1fcMc6iLgWLmRCAqTfn/Warung-Nasi-Ibu-Wati?node-id=160-290&starting-point-node-id=160%3A290&t=7AA4RDp5HOEr132q-1"
+            target="_blank"
+            className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold"
+          >
+            User UI
+          </a>
 
-            <h3 className="text-2xl font-bold mb-4">
-              Quality Checking ERP
-            </h3>
-
-            <p className="text-zinc-400 leading-relaxed mb-6">
-              A quality control management system designed to streamline
-              inspection and reporting processes within ERP workflows.
-            </p>
-
-            <div className="flex gap-3 flex-wrap">
-              <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-                React
-              </span>
-
-              <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-                MySQL
-              </span>
-
-              <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-                ERP
-              </span>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-[32px] p-8 hover:scale-[1.02] transition duration-300 shadow-xl">
-            <p className="text-red-300 text-sm mb-4">UI/UX</p>
-
-            <h3 className="text-2xl font-bold mb-4">
-              Modern Dashboard Design
-            </h3>
-
-            <p className="text-zinc-400 leading-relaxed mb-6">
-              A responsive dashboard interface concept focused on usability,
-              clean layout, and modern aesthetics.
-            </p>
-
-            <div className="flex gap-3 flex-wrap">
-              <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-                Figma
-              </span>
-
-              <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-                UI Design
-              </span>
-
-              <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-                Prototype
-              </span>
-            </div>
-          </div>
+          <a
+            href="https://www.figma.com/proto/GGg1fcMc6iLgWLmRCAqTfn/Warung-Nasi-Ibu-Wati?node-id=112-87&starting-point-node-id=112%3A87&t=5BUYhSGSTyFDqNGd-1"
+            target="_blank"
+            className="border border-zinc-700 px-5 py-2 rounded-full text-sm"
+          >
+            Admin UI
+          </a>
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* RUMAH SAKIT */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300 hover:border-rose-300">
+
+      <img
+        src={rumahsakit}
+        alt="Rumah Sakit"
+        className="w-full h-52 object-cover"
+      />
+
+      <div className="p-6">
+        <p className="text-rose-300 text-sm mb-3">
+          MOBILE UI/UX
+        </p>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Hospital Queue App
+        </h3>
+
+        <p className="text-zinc-400 mb-6">
+          Mobile application design for hospital queue management system.
+        </p>
+
+        <div className="flex gap-3 flex-wrap mb-6">
+          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+            Figma
+          </span>
+
+          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+            Prototype
+          </span>
+        </div>
+
+        <a
+          href="https://www.figma.com/proto/NE7HsYG4a1ByILo2tYqXqy/IMK-M12?node-id=0-1&t=H735JUvhhk3vCpTw-1"
+          target="_blank"
+          className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold"
+        >
+          View Prototype
+        </a>
+      </div>
+    </div>
+
+    {/* DENTAL CARE */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300 hover:border-rose-300">
+
+      <img
+        src={dentalcare}
+        alt="Dental Care"
+        className="w-full h-52 object-cover"
+      />
+
+      <div className="p-6">
+        <p className="text-rose-300 text-sm mb-3">
+          UI DESIGN
+        </p>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Dental Care App
+        </h3>
+
+        <p className="text-zinc-400 mb-6">
+          Modern dental clinic mobile interface with clean healthcare design.
+        </p>
+
+        <div className="flex gap-3 flex-wrap mb-6">
+          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+            Figma
+          </span>
+
+          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+            UI Design
+          </span>
+        </div>
+
+        <a
+          href="https://www.figma.com/proto/7sdt7BtIdlq5acd3Q2mYCm/LSP---Klinik-Dental-Senyum---Tim-4?node-id=109-95&p=f&t=HPs2OBkT2WjB4NMk-1&scaling=min-zoom&content-scaling=fixed&page-id=108%3A12"
+          target="_blank"
+          className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold"
+        >
+          View Design
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* CERTIFICATES */}
       <section className="px-8 md:px-20 py-16">
