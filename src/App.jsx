@@ -1,9 +1,17 @@
+import foto from './assets/thatiana.jpg'
+
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white p-10">
       <h1 className="text-5xl font-bold mb-4">
         Thatiana Nabila
       </h1>
+
+<img 
+  src={foto} 
+  alt="foto"
+  className="w-40 rounded-full mb-4"
+/>
 
       <p className="text-gray-400 mb-10">
         Information Systems Student
