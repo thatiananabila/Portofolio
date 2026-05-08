@@ -54,10 +54,7 @@ export default function App() {
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
           <p className="text-zinc-400 leading-relaxed text-lg">
-            I am an Information Systems student interested in system
-            development, enterprise resource planning, and creating modern
-            digital experiences. I enjoy building projects that combine
-            functionality with clean and aesthetic interfaces.
+            Mahasiswa aktif jurusan Sistem Informasi yang memiliki passion besar dalam menciptakan solusi digital yang inovatif. Memiliki ketertarikan tinggi terhadap perkembangan teknologi dan digital serta senang mengeksplorasi berbagai hal yang berkaitan dengan bidang Teknologi Informasi, khususnya analisis sistem, pengembangan solusi digital, dan desain antarmuka pengguna. Memiliki kemampuan adaptasi yang baik, semangat belajar yang tinggi, serta mampu bekerja secara individu maupun dalam tim. Aspirasi karier mencakup posisi sebagai System Analyst, IT Business Analyst, IT Project Manager, UI/UX Designer, dan QA Engineer.
           </p>
         </div>
       </section>
