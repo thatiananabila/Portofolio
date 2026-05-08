@@ -300,7 +300,7 @@ export default function App() {
       <img
         src={rumahsakit}
         alt="Rumah Sakit"
-        className="w-full h-52 object-cover"
+        className="w-full h-52 object-cover object-top"
       />
 
       <div className="p-6">
