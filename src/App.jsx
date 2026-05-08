@@ -262,7 +262,7 @@ export default function App() {
           </span>
 
           <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-            Mobile Design
+            Website Design
           </span>
         </div>
 
