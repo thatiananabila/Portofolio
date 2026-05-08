@@ -406,52 +406,83 @@ export default function App() {
 </section>
 
       {/* CERTIFICATES */}
-      <section className="px-8 md:px-20 py-16">
-        <div className="flex items-center justify-between mb-10">
-          <h2 className="text-3xl font-bold">Certificates</h2>
-          <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+      {/* ================= SECTION CERTIFICATES & EXPERIENCE ================= */}
+<section className="px-8 md:px-20 py-20 bg-[#0a0a0a]">
+  
+  {/* 1. INTERNSHIP EXPERIENCE (CARD BESAR) */}
+  <div className="flex items-center justify-between mb-10">
+    <h2 className="text-3xl font-bold text-rose-300">Internship Experience</h2>
+    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-8 mb-20">
+    {/* Card GMU */}
+    <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-400/50 transition-all duration-500 hover:-translate-y-2">
+      <div className="flex justify-between items-start mb-6">
+        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-xs font-mono">2024</span>
+        <div className="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+          🏢
         </div>
+      </div>
+      <h3 className="text-2xl font-bold mb-1 text-white">Production Control & Analyst Intern</h3>
+      <p className="text-rose-300/80 mb-4 font-medium">PT Garuda Metal Utama (GMU)</p>
+      <p className="text-zinc-400 text-sm leading-relaxed mb-8">
+        Mempelajari alur produksi komponen otomotif, membantu dalam pengolahan data produksi, serta melakukan observasi pada sistem manajemen manufaktur perusahaan.
+      </p>
+      <button className="w-full py-3 bg-white text-black rounded-xl font-bold text-sm hover:bg-rose-300 transition">
+        View Proof ↗
+      </button>
+    </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            {
-              title: 'UI/UX Design Fundamentals',
-              issuer: 'Coursera',
-            },
-            {
-              title: 'React Web Development',
-              issuer: 'Dicoding',
-            },
-            {
-              title: 'Database Management',
-              issuer: 'MySkill',
-            },
-          ].map((cert) => (
-            <div
-              key={cert.title}
-              className="bg-zinc-900 border border-zinc-800 rounded-[28px] overflow-hidden hover:-translate-y-2 transition duration-300"
-            >
-              <div className="h-40 bg-gradient-to-br from-rose-500/20 to-red-500/20 flex items-center justify-center text-zinc-500 text-sm">
-                Certificate Preview
-              </div>
-
-              <div className="p-6">
-                <h3 className="font-bold text-lg mb-2">
-                  {cert.title}
-                </h3>
-
-                <p className="text-zinc-400 text-sm mb-4">
-                  {cert.issuer}
-                </p>
-
-                <button className="text-rose-300 hover:text-red-300 transition">
-                  View Certificate →
-                </button>
-              </div>
-            </div>
-          ))}
+    {/* Card GAOTek */}
+    <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-400/50 transition-all duration-500 hover:-translate-y-2">
+      <div className="flex justify-between items-start mb-6">
+        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-xs font-mono">2024</span>
+        <div className="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+          🌐
         </div>
-      </section>
+      </div>
+      <h3 className="text-2xl font-bold mb-1 text-white">Technical Support Intern</h3>
+      <p className="text-rose-300/80 mb-4 font-medium">GAOTek Inc. (Remote - Canada/USA)</p>
+      <p className="text-zinc-400 text-sm leading-relaxed mb-8">
+        Berpartisipasi dalam training teknis internasional, menangani dokumentasi teknis (sourcing), dan bekerja dalam lingkungan kerja global secara remote.
+      </p>
+      <button className="w-full py-3 bg-white text-black rounded-xl font-bold text-sm hover:bg-rose-300 transition">
+        View Proof ↗
+      </button>
+    </div>
+  </div>
+
+  {/* 2. COURSES & CERTIFICATIONS (GRID KECIL) */}
+  <div className="flex items-center justify-between mb-10">
+    <h2 className="text-3xl font-bold text-rose-300">Certifications</h2>
+    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {[
+      { title: "System Analyst (ASR)", issuer: "LSP Gunadarma" },
+      { title: "Oracle for Intermediate", issuer: "LEPKOM" },
+      { title: "SQL Server for Intermediate", issuer: "LEPKOM" },
+      { title: "Business Analysis", issuer: "Coursera" },
+      { title: "Manajemen Proyek", issuer: "Dicoding" },
+      { title: "Dasar AI", issuer: "Dicoding" },
+    ].map((cert, index) => (
+      <div key={index} className="p-6 rounded-2xl bg-zinc-900/20 border border-zinc-800 hover:bg-zinc-900/60 transition group cursor-pointer">
+        <h4 className="font-bold text-white group-hover:text-rose-300 transition mb-1">{cert.title}</h4>
+        <p className="text-zinc-500 text-xs uppercase tracking-wider">{cert.issuer}</p>
+      </div>
+    ))}
+  </div>
+
+  {/* VIEW ALL BUTTON */}
+  <div className="mt-12 text-center">
+    <button className="text-zinc-500 hover:text-rose-300 text-sm font-medium transition flex items-center justify-center gap-2 mx-auto">
+      View All 15+ Certificates <span className="text-lg">→</span>
+    </button>
+  </div>
+
+</section>
 
       {/* CONTACT */}
       <section className="px-8 md:px-20 py-24">
