@@ -59,32 +59,168 @@ export default function App() {
       </section>
 
       {/* SKILLS */}
-      <section className="px-8 md:px-20 py-16">
-        <div className="flex items-center justify-between mb-10">
-          <h2 className="text-3xl font-bold">Skills</h2>
-          <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
-        </div>
+{/* SKILLS */}
+<section className="px-8 md:px-20 py-16">
+  <div className="flex items-center justify-between mb-10">
+    <h2 className="text-3xl font-bold">Skills & Interests</h2>
+    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+  </div>
 
-        <div className="grid md:grid-cols-4 gap-6">
-          {[
-            'React JS',
-            'MySQL',
-            'ERP System',
-            'UI/UX Design',
-            'PowerBuilder',
-            'Tailwind CSS',
-            'JavaScript',
-            'Figma',
-          ].map((skill) => (
-            <div
-              key={skill}
-              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 hover:-translate-y-2 transition duration-300 hover:border-rose-300"
-            >
-              <h3 className="font-semibold text-lg">{skill}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid md:grid-cols-2 gap-8">
+
+    {/* DATABASE */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-300 transition duration-300">
+      <div className="text-4xl mb-5">🗄️</div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Database Management
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {[
+          'MySQL',
+          'Oracle (PL/SQL)',
+          'SSMS',
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="bg-zinc-800 px-4 py-2 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* DEVELOPMENT */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-300 transition duration-300">
+      <div className="text-4xl mb-5">💻</div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Application Development
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {[
+          'PowerBuilder',
+          'HTML',
+          'CSS',
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="bg-zinc-800 px-4 py-2 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* DESIGN */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-300 transition duration-300">
+      <div className="text-4xl mb-5">🎨</div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Design Tools
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {[
+          'Canva',
+          'Figma',
+          'Inkscape',
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="bg-zinc-800 px-4 py-2 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* OFFICE & ANALYTICS */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-300 transition duration-300">
+      <div className="text-4xl mb-5">📊</div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Office & Analytics
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {[
+          'Word',
+          'Excel',
+          'PowerPoint',
+          'Power BI',
+          'Weka',
+          'Jupyter Notebook',
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="bg-zinc-800 px-4 py-2 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* SOFT SKILLS */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-300 transition duration-300">
+      <div className="text-4xl mb-5">🧠</div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Soft Skills
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {[
+          'Communication',
+          'Time Management',
+          'Analytical Thinking',
+          'Leadership',
+          'Teamwork',
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="bg-zinc-800 px-4 py-2 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* INTERESTS */}
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-300 transition duration-300">
+      <div className="text-4xl mb-5">🚀</div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Career Interests
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {[
+          'System Analyst',
+          'IT Business Analyst',
+          'IT Project Manager',
+          'UI/UX Designer',
+          'QA Engineer',
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="bg-zinc-800 px-4 py-2 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* PROJECTS */}
       <section className="px-8 md:px-20 py-16">
