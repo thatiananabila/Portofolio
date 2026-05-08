@@ -409,68 +409,70 @@ export default function App() {
       {/* ================= SECTION CERTIFICATES & EXPERIENCE ================= */}
 <section className="px-8 md:px-20 py-20 bg-[#0a0a0a]">
   
-  {/* 1. INTERNSHIP EXPERIENCE (CARD BESAR) */}
+  {/* 1. INTERNSHIP EXPERIENCE (BERDASARKAN CV) */}
   <div className="flex items-center justify-between mb-10">
     <h2 className="text-3xl font-bold text-rose-300">Internship Experience</h2>
     <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
   </div>
 
   <div className="grid md:grid-cols-2 gap-8 mb-20">
-    {/* Card GMU */}
+    {/* Card PT. Garuda Metal Utama */}
     <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-400/50 transition-all duration-500 hover:-translate-y-2">
       <div className="flex justify-between items-start mb-6">
-        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-xs font-mono">2024</span>
-        <div className="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-          🏢
+        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-xs font-mono">Ags 2025 - Nov 2025</span>
+        <div className="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform text-xl">
+          ⚙️
         </div>
       </div>
-      <h3 className="text-2xl font-bold mb-1 text-white">Production Control & Analyst Intern</h3>
-      <p className="text-rose-300/80 mb-4 font-medium">PT Garuda Metal Utama (GMU)</p>
-      <p className="text-zinc-400 text-sm leading-relaxed mb-8">
-        Mempelajari alur produksi komponen otomotif, membantu dalam pengolahan data produksi, serta melakukan observasi pada sistem manajemen manufaktur perusahaan.
-      </p>
+      <h3 className="text-2xl font-bold mb-1 text-white text-[22px]">IT Support - Programmer</h3>
+      <p className="text-rose-300/80 mb-4 font-medium">PT. Garuda Metal Utama</p>
+      <ul className="text-zinc-400 text-sm leading-relaxed mb-8 list-disc ml-4 space-y-2">
+        <li>Berkontribusi dalam digitalisasi sistem <b>Quality in Process (QiP)</b> ke sistem ERP menggunakan PowerBuilder.</li>
+        <li>Membuat dashboard <i>Machine Trend</i> dan <i>Control Chart</i> untuk monitoring kualitas produksi.</li>
+      </ul>
       <button className="w-full py-3 bg-white text-black rounded-xl font-bold text-sm hover:bg-rose-300 transition">
         View Proof ↗
       </button>
     </div>
 
-    {/* Card GAOTek */}
+    {/* Card GAOTek Inc. */}
     <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-8 hover:border-rose-400/50 transition-all duration-500 hover:-translate-y-2">
       <div className="flex justify-between items-start mb-6">
-        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-xs font-mono">2024</span>
-        <div className="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-          🌐
+        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-xs font-mono">Oct 2024 - Jan 2025</span>
+        <div className="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform text-xl">
+          🚀
         </div>
       </div>
-      <h3 className="text-2xl font-bold mb-1 text-white">Technical Support Intern</h3>
-      <p className="text-rose-300/80 mb-4 font-medium">GAOTek Inc. (Remote - Canada/USA)</p>
-      <p className="text-zinc-400 text-sm leading-relaxed mb-8">
-        Berpartisipasi dalam training teknis internasional, menangani dokumentasi teknis (sourcing), dan bekerja dalam lingkungan kerja global secara remote.
-      </p>
+      <h3 className="text-2xl font-bold mb-1 text-white text-[22px]">Product Sourcing - Squad Leader</h3>
+      <p className="text-rose-300/80 mb-4 font-medium">GAOTek Inc. (Remote)</p>
+      <ul className="text-zinc-400 text-sm leading-relaxed mb-8 list-disc ml-4 space-y-2">
+        <li>Melakukan riset pasar, analisis tren industri, serta evaluasi harga dan supplier.</li>
+        <li><b>Dipromosikan menjadi Squad Leader</b> untuk membimbing intern dan melaporkan kinerja tim ke manajemen.</li>
+      </ul>
       <button className="w-full py-3 bg-white text-black rounded-xl font-bold text-sm hover:bg-rose-300 transition">
         View Proof ↗
       </button>
     </div>
   </div>
 
-  {/* 2. COURSES & CERTIFICATIONS (GRID KECIL) */}
+  {/* 2. CERTIFICATIONS (TOP 6 BERDASARKAN CV) */}
   <div className="flex items-center justify-between mb-10">
-    <h2 className="text-3xl font-bold text-rose-300">Certifications</h2>
+    <h2 className="text-3xl font-bold text-rose-300">Top Certifications</h2>
     <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
     {[
-      { title: "System Analyst (ASR)", issuer: "LSP Gunadarma" },
-      { title: "Oracle for Intermediate", issuer: "LEPKOM" },
-      { title: "SQL Server for Intermediate", issuer: "LEPKOM" },
-      { title: "Business Analysis", issuer: "Coursera" },
-      { title: "Manajemen Proyek", issuer: "Dicoding" },
-      { title: "Dasar AI", issuer: "Dicoding" },
+      { title: "System Analyst", issuer: "LEPKOM LSP (Sep 2025)" },
+      { title: "SQL Server for Intermediate", issuer: "LEPKOM GUNADARMA" },
+      { title: "Oracle for Intermediate", issuer: "LEPKOM GUNADARMA" },
+      { title: "Business Analysis & Process Mgmt", issuer: "Coursera" },
+      { title: "Dasar Manajemen Proyek", issuer: "Dicoding" },
+      { title: "Fundamental Web (Golang & VB)", issuer: "LEPKOM GUNADARMA" },
     ].map((cert, index) => (
       <div key={index} className="p-6 rounded-2xl bg-zinc-900/20 border border-zinc-800 hover:bg-zinc-900/60 transition group cursor-pointer">
-        <h4 className="font-bold text-white group-hover:text-rose-300 transition mb-1">{cert.title}</h4>
-        <p className="text-zinc-500 text-xs uppercase tracking-wider">{cert.issuer}</p>
+        <h4 className="font-bold text-white group-hover:text-rose-300 transition mb-1 text-sm">{cert.title}</h4>
+        <p className="text-zinc-500 text-[10px] uppercase tracking-wider">{cert.issuer}</p>
       </div>
     ))}
   </div>
@@ -483,6 +485,7 @@ export default function App() {
   </div>
 
 </section>
+
 
       {/* CONTACT */}
       <section className="px-8 md:px-20 py-24">
