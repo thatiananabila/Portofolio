@@ -327,49 +327,6 @@ export default function App() {
         </a>
       </div>
     </div>
-
-    {/* DENTAL CARE */}
-    <div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300 hover:border-rose-300">
-
-      <img
-        src={dentalcare}
-        alt="Dental Care"
-        className="w-full h-52 object-cover"
-      />
-
-      <div className="p-6">
-        <p className="text-rose-300 text-sm mb-3">
-          UI DESIGN
-        </p>
-
-        <h3 className="text-2xl font-bold mb-4">
-          Dental Care App
-        </h3>
-
-        <p className="text-zinc-400 mb-6">
-          Modern dental clinic mobile interface with clean healthcare design.
-        </p>
-
-        <div className="flex gap-3 flex-wrap mb-6">
-          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-            Figma
-          </span>
-
-          <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
-            UI Design
-          </span>
-        </div>
-
-        <a
-          href="https://www.figma.com/proto/7sdt7BtIdlq5acd3Q2mYCm/LSP---Klinik-Dental-Senyum---Tim-4?node-id=109-95&p=f&t=HPs2OBkT2WjB4NMk-1&scaling=min-zoom&content-scaling=fixed&page-id=108%3A12"
-          target="_blank"
-          className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold"
-        >
-          View Design
-        </a>
-      </div>
-    </div>
-
   </div>
 </section>
 
