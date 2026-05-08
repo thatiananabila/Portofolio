@@ -1,9 +1,17 @@
+import { useState } from 'react'
+
 import foto from './assets/Thatiana.png'
 import warungnasi from './assets/UMKM.png'
 import rumahsakit from './assets/rumahsakit.png'
 import dentalcare from './assets/dental.png'
+import erp1 from './assets/qip-form.png'
+import erp2 from './assets/qip-record.png'
+import erp3 from './assets/qip-report.png'
+import erp4 from './assets/qip-print.png'
 
+const erpImages = [erp1, erp2, erp3, erp4]
 export default function App() {
+  const [currentImage, setCurrentImage] = useState(0)
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#120809] via-[#2a1013] to-[#14090b] text-white overflow-hidden">
       {/* HERO */}
@@ -327,6 +335,73 @@ export default function App() {
         </a>
       </div>
     </div>
+
+    {/* ERP POWERBUILDER */}
+<div className="bg-zinc-900/70 border border-zinc-800 rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300 hover:border-rose-300">
+
+  <div className="relative">
+    <img
+      src={erpImages[currentImage]}
+      alt="ERP QC"
+      className="w-full h-52 object-cover transition duration-500"
+    />
+
+    <button
+      onClick={() =>
+        setCurrentImage(
+          currentImage === 0
+            ? erpImages.length - 1
+            : currentImage - 1
+        )
+      }
+      className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 px-3 py-1 rounded-full"
+    >
+      ←
+    </button>
+
+    <button
+      onClick={() =>
+        setCurrentImage(
+          currentImage === erpImages.length - 1
+            ? 0
+            : currentImage + 1
+        )
+      }
+      className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 px-3 py-1 rounded-full"
+    >
+      →
+    </button>
+  </div>
+
+  <div className="p-6">
+    <p className="text-rose-300 text-sm mb-3">
+      ERP SYSTEM
+    </p>
+
+    <h3 className="text-2xl font-bold mb-4">
+      Quality Checking ERP
+    </h3>
+
+    <p className="text-zinc-400 mb-6">
+      Desktop-based ERP quality checking system developed using PowerBuilder
+      for inspection, reporting, and quality control management.
+    </p>
+
+    <div className="flex gap-3 flex-wrap mb-6">
+      <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+        PowerBuilder
+      </span>
+
+      <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+        SQL Server
+      </span>
+
+      <span className="bg-zinc-800 px-4 py-2 rounded-full text-sm">
+        ERP
+      </span>
+    </div>
+  </div>
+</div>
   </div>
 </section>
 
