@@ -21,8 +21,7 @@ export default function App() {
             </h1>
 
             <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-xl">
-              Information Systems student passionate about ERP systems,
-              UI/UX design, and modern web development.
+              Transforming ideas into modern and impactful digital experiences.
             </p>
 
             <div className="flex gap-4 flex-wrap">
