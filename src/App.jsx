@@ -15,9 +15,9 @@ export default function App() {
             </p>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-              Thatiana
+              Thatiana Nabila
               <br />
-              Nabila
+              Maritza Patra
             </h1>
 
             <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-xl">
