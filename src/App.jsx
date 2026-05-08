@@ -2,15 +2,15 @@ import foto from './assets/Thatiana.png'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1f1b3a] via-[#2d2a5a] to-[#1a1833] text-white overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#120809] via-[#2a1013] to-[#14090b] text-white overflow-hidden">
       {/* HERO */}
       <section className="px-8 md:px-20 pt-24 pb-20 relative">
-        <div className="absolute top-0 left-0 w-72 h-72 bg-purple-300/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-300/30 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-72 h-72 bg-rose-400/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-red-400/20 rounded-full blur-3xl" />
 
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-14">
           <div className="max-w-2xl">
-            <p className="text-purple-300 mb-4 tracking-[0.3em] uppercase text-sm">
+            <p className="text-rose-300 mb-4 tracking-[0.3em] uppercase text-sm">
               Portfolio
             </p>
 
@@ -37,7 +37,7 @@ export default function App() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-300 to-blue-300 rounded-[40px] blur-2xl opacity-40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-rose-300 to-red-400 rounded-[40px] blur-2xl opacity-40" />
 
             <img
               src={foto}
@@ -79,7 +79,7 @@ export default function App() {
           ].map((skill) => (
             <div
               key={skill}
-              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 hover:-translate-y-2 transition duration-300 hover:border-purple-300"
+              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 hover:-translate-y-2 transition duration-300 hover:border-rose-300"
             >
               <h3 className="font-semibold text-lg">{skill}</h3>
             </div>
@@ -96,7 +96,7 @@ export default function App() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-[32px] p-8 hover:scale-[1.02] transition duration-300 shadow-xl">
-            <p className="text-purple-300 text-sm mb-4">ERP SYSTEM</p>
+            <p className="text-rose-300 text-sm mb-4">ERP SYSTEM</p>
 
             <h3 className="text-2xl font-bold mb-4">
               Quality Checking ERP
@@ -123,7 +123,7 @@ export default function App() {
           </div>
 
           <div className="bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-[32px] p-8 hover:scale-[1.02] transition duration-300 shadow-xl">
-            <p className="text-blue-300 text-sm mb-4">UI/UX</p>
+            <p className="text-red-300 text-sm mb-4">UI/UX</p>
 
             <h3 className="text-2xl font-bold mb-4">
               Modern Dashboard Design
@@ -177,7 +177,7 @@ export default function App() {
               key={cert.title}
               className="bg-zinc-900 border border-zinc-800 rounded-[28px] overflow-hidden hover:-translate-y-2 transition duration-300"
             >
-              <div className="h-40 bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/20 flex items-center justify-center text-zinc-500 text-sm">
+              <div className="h-40 bg-gradient-to-br from-rose-500/20 to-red-500/20 flex items-center justify-center text-zinc-500 text-sm">
                 Certificate Preview
               </div>
 
@@ -190,7 +190,7 @@ export default function App() {
                   {cert.issuer}
                 </p>
 
-                <button className="text-purple-300 hover:text-fuchsia-300 transition">
+                <button className="text-rose-300 hover:text-red-300 transition">
                   View Certificate →
                 </button>
               </div>
@@ -201,7 +201,7 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="px-8 md:px-20 py-24">
-        <div className="bg-gradient-to-r from-purple-300/10 to-blue-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
+        <div className="bg-gradient-to-r from-rose-300/10 to-red-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
           <h2 className="text-4xl font-bold mb-6">
             Let’s Work Together
           </h2>
