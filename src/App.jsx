@@ -1,4 +1,4 @@
-import foto from './assets/Thatiana.jpg'
+import foto from './assets/Thatiana.png'
 
 export default function App() {
   return (
