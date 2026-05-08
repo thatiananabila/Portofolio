@@ -40,7 +40,7 @@ export default function App() {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-300 to-blue-300 rounded-[40px] blur-2xl opacity-40" />
 
             <img
-              src="/src/assets/Thatiana.jpg"
+              src={foto}
               alt="profile"
               className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-[40px] border border-zinc-800 shadow-2xl"
             />
