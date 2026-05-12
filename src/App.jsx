@@ -646,7 +646,6 @@ export default function App() {
 </section>
 
 
-      {/* CONTACT */}
 {/* CONTACT */}
 <section className="px-8 md:px-20 py-24">
 
@@ -662,22 +661,22 @@ export default function App() {
     </p>
 
     {/* ICONS */}
-    <div className="flex justify-center gap-10 mb-16">
+    <a
+  href="mailto:thati4na@gmail.com"
+  className="flex flex-col items-center gap-4"
+>
 
-      {/* EMAIL */}
-      <div className="flex flex-col items-center gap-4">
+  <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
 
-        <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
+    <FaEnvelope className="text-5xl text-zinc-300" />
 
-          <FaEnvelope className="text-5xl text-zinc-300" />
+  </div>
 
-        </div>
+  <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
+    Email
+  </p>
 
-        <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
-          Email
-        </p>
-
-      </div>
+</a>
 
       {/* LINKEDIN */}
       <a
@@ -708,9 +707,12 @@ export default function App() {
         Atau kirim pesan ke:
       </p>
 
-      <h3 className="text-4xl md:text-5xl font-bold text-white break-all">
-        thati4na@gmail.com
-      </h3>
+      <a
+  href="mailto:thati4na@gmail.com"
+  className="text-4xl md:text-5xl font-bold text-white break-all hover:text-rose-300 transition"
+>
+  thati4na@gmail.com
+</a>
 
     </div>
 
