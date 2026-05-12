@@ -653,8 +653,8 @@ export default function App() {
           </h2>
 
           <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
-            Feel free to contact me for collaborations, internships, or
-            creative projects.
+            Open to internship opportunities, professional collaborations,
+and digital project development in technology and design.
           </p>
 
           <div className="flex justify-center gap-4 flex-wrap">
