@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 import gmuCert from './assets/certificates/gmu.png';
 import gaoCert from './assets/certificates/gao.png';
@@ -661,45 +660,26 @@ export default function App() {
     </p>
 
     {/* ICONS */}
-{/* ICONS */}
-<div className="flex justify-center gap-10 mb-16">
+<div className="flex justify-center gap-10 mb-14 text-lg">
 
-  {/* EMAIL */}
   <a
     href="mailto:thati4na@gmail.com"
-    className="flex flex-col items-center gap-4"
+    className="text-zinc-400 hover:text-rose-300 transition"
   >
-
-    <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
-
-      <FaEnvelope className="text-5xl text-white" />
-
-    </div>
-
-    <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
-      Email
-    </p>
-
+    Email
   </a>
 
-  {/* LINKEDIN */}
+  <span className="text-zinc-700">
+    /
+  </span>
+
   <a
     href="https://id.linkedin.com/in/thatiananabila"
     target="_blank"
     rel="noreferrer"
-    className="flex flex-col items-center gap-4"
+    className="text-zinc-400 hover:text-rose-300 transition"
   >
-
-    <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
-
-      <FaLinkedin className="text-5xl text-white" />
-
-    </div>
-
-    <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
-      LinkedIn
-    </p>
-
+    LinkedIn
   </a>
 
 </div>
