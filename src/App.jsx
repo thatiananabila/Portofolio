@@ -631,10 +631,15 @@ export default function App() {
 
   {/* VIEW ALL */}
   <div className="mt-12 text-center">
-    <button className="text-zinc-500 hover:text-rose-300 text-sm font-medium transition flex items-center justify-center gap-2 mx-auto">
-      View All 15+ Certificates
-      <span className="text-lg">→</span>
-    </button>
+    <a
+  href="https://drive.google.com/drive/folders/1lkJeGQfVuO8vmoF7xAatU48OeJ0v6RWC?usp=sharing"
+  target="_blank"
+  rel="noreferrer"
+  className="text-zinc-500 hover:text-rose-300 text-sm font-medium transition flex items-center justify-center gap-2 mx-auto"
+>
+  View All 15+ Certificates
+  <span className="text-lg">→</span>
+</a>
   </div>
 
 </section>
@@ -653,13 +658,21 @@ export default function App() {
           </p>
 
           <div className="flex justify-center gap-4 flex-wrap">
-            <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition duration-300">
-              Email Me
-            </button>
+            <a
+  href="mailto:thati4na@gmail.com"
+  className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition duration-300"
+>
+  Email Me
+</a>
 
-            <button className="border border-zinc-700 px-8 py-3 rounded-full hover:bg-zinc-900 transition duration-300">
-              GitHub
-            </button>
+            <a
+  href="https://id.linkedin.com/in/thatiananabila"
+  target="_blank"
+  rel="noreferrer"
+  className="border border-zinc-700 px-8 py-3 rounded-full hover:bg-zinc-900 transition duration-300"
+>
+  LinkedIn
+</a>
           </div>
         </div>
       </section>
