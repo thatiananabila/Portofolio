@@ -45,13 +45,19 @@ export default function App() {
             </p>
 
             <div className="flex gap-4 flex-wrap">
-              <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300">
-                View Projects
-              </button>
+              <a
+  href="#projects"
+  className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300"
+>
+  View Projects
+</a>
 
-              <button className="border border-zinc-700 px-6 py-3 rounded-full hover:bg-zinc-900 transition duration-300">
-                Contact Me
-              </button>
+              <a
+  href="#contact"
+  className="border border-zinc-700 px-6 py-3 rounded-full hover:bg-zinc-900 transition duration-300"
+>
+  Contact Me
+</a>
             </div>
           </div>
 
@@ -243,7 +249,7 @@ export default function App() {
 </section>
 
       {/* PROJECTS */}
-<section className="px-8 md:px-20 py-16">
+<section id="projects" className="px-8 md:px-20 py-16">
   <div className="flex items-center justify-between mb-10">
     <h2 className="text-3xl font-bold">Projects</h2>
     <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
@@ -646,7 +652,7 @@ export default function App() {
 
 
 {/* CONTACT */}
-<section className="px-8 md:px-20 py-24">
+<section id="contact" className="px-8 md:px-20 py-24">
 
   <div className="bg-gradient-to-r from-rose-300/10 to-red-300/10 border border-zinc-800 rounded-[40px] p-14 text-center backdrop-blur-xl">
 
