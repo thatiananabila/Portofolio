@@ -672,7 +672,7 @@ export default function App() {
 
     <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
 
-      <FaEnvelope className="text-5xl text-zinc-300" />
+      <FaEnvelope className="text-5xl text-white" />
 
     </div>
 
@@ -692,7 +692,7 @@ export default function App() {
 
     <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
 
-      <FaLinkedin className="text-5xl text-zinc-300" />
+      <FaLinkedin className="text-5xl text-white" />
 
     </div>
 
