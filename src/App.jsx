@@ -414,17 +414,182 @@ export default function App() {
   </div>
 </section>
 
+{/* ================= SECTION CERTIFICATES ================= */}
+<section className="px-8 md:px-20 py-20 bg-[#0a0a0a]">
 
+  {/* INTERNSHIP */}
+  <div className="flex items-center justify-between mb-10">
+    <h2 className="text-3xl font-bold text-rose-300">
+      Internship Experience
+    </h2>
 
+    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+  </div>
 
+  <div className="grid md:grid-cols-2 gap-8 mb-20">
 
+    {/* GMU */}
+    <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-10 hover:border-rose-400/50 transition-all duration-500">
 
+      <div className="flex justify-between items-start mb-8">
+        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-[10px] font-mono uppercase">
+          Ags 2025 - Nov 2025
+        </span>
 
+        <div className="text-2xl opacity-50 group-hover:opacity-100 transition">
+          ⚙️
+        </div>
+      </div>
 
-  {/* VIEW ALL BUTTON */}
+      <h3 className="text-2xl font-bold mb-1 text-white">
+        IT Support - Programmer
+      </h3>
+
+      <p className="text-rose-300/80 mb-6 font-medium text-lg italic">
+        PT. Garuda Metal Utama
+      </p>
+
+      <ul className="text-zinc-400 text-sm leading-relaxed mb-10 space-y-3">
+        <li>
+          Digitalisasi sistem Quality in Process (QiP) ke ERP PowerBuilder.
+        </li>
+
+        <li>
+          Monitoring kualitas produksi via dashboard Machine Trend.
+        </li>
+      </ul>
+
+      <a
+        href={gmuCert}
+        target="_blank"
+        rel="noreferrer"
+        className="block w-full py-4 bg-zinc-800 text-white text-center rounded-2xl font-bold text-sm hover:bg-white hover:text-black transition duration-300"
+      >
+        View Full Certificate ↗
+      </a>
+    </div>
+
+    {/* GAOTEK */}
+    <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-10 hover:border-rose-400/50 transition-all duration-500">
+
+      <div className="flex justify-between items-start mb-8">
+        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-[10px] font-mono uppercase">
+          Oct 2024 - Jan 2025
+        </span>
+
+        <div className="text-2xl opacity-50 group-hover:opacity-100 transition">
+          🚀
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-bold mb-1 text-white">
+        Product Sourcing - Squad Leader
+      </h3>
+
+      <p className="text-rose-300/80 mb-6 font-medium text-lg italic">
+        GAOTek Inc. (Remote)
+      </p>
+
+      <ul className="text-zinc-400 text-sm leading-relaxed mb-10 space-y-3">
+        <li>
+          Riset pasar global dan analisis tren industri teknologi.
+        </li>
+
+        <li>
+          Dipromosikan menjadi Squad Leader untuk manajemen tim intern.
+        </li>
+      </ul>
+
+      <a
+        href={gaoCert}
+        target="_blank"
+        rel="noreferrer"
+        className="block w-full py-4 bg-zinc-800 text-white text-center rounded-2xl font-bold text-sm hover:bg-white hover:text-black transition duration-300"
+      >
+        View Full Certificate ↗
+      </a>
+    </div>
+
+  </div>
+
+  {/* TOP CERTIFICATIONS */}
+  <div className="flex items-center justify-between mb-10">
+    <h2 className="text-3xl font-bold text-rose-300">
+      Top Certifications
+    </h2>
+
+    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    {[
+      {
+        title: "System Analyst",
+        issuer: "LSP Gunadarma",
+        img: lspCert,
+      },
+      {
+        title: "Oracle Intermediate",
+        issuer: "LEPKOM",
+        img: oracleCert,
+      },
+      {
+        title: "SQL Server Intermediate",
+        issuer: "LEPKOM",
+        img: sqlCert,
+      },
+      {
+        title: "Business Analysis",
+        issuer: "Coursera",
+        img: courseraCert,
+      },
+      {
+        title: "Manajemen Proyek",
+        issuer: "Dicoding",
+        img: dicodingCert,
+      },
+      {
+        title: "Fundamental Web",
+        issuer: "LEPKOM",
+        img: fundaWebCert,
+      },
+    ].map((cert, index) => (
+      <a
+        key={index}
+        href={cert.img}
+        target="_blank"
+        rel="noreferrer"
+        className="group bg-zinc-900/20 border border-zinc-800 rounded-2xl overflow-hidden hover:border-rose-400/30 transition"
+      >
+
+        <div className="h-28 bg-zinc-800 overflow-hidden">
+          <img
+            src={cert.img}
+            alt={cert.title}
+            className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition duration-500"
+          />
+        </div>
+
+        <div className="p-4">
+          <h4 className="font-bold text-white group-hover:text-rose-300 transition text-sm leading-tight">
+            {cert.title}
+          </h4>
+
+          <p className="text-zinc-500 text-[10px] uppercase mt-1 tracking-widest">
+            {cert.issuer}
+          </p>
+        </div>
+
+      </a>
+    ))}
+  </div>
+
+  {/* VIEW ALL */}
   <div className="mt-12 text-center">
     <button className="text-zinc-500 hover:text-rose-300 text-sm font-medium transition flex items-center justify-center gap-2 mx-auto">
-      View All 15+ Certificates <span className="text-lg">→</span>
+      View All 15+ Certificates
+      <span className="text-lg">→</span>
     </button>
   </div>
 
@@ -433,7 +598,7 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="px-8 md:px-20 py-24">
-        <div className="bg-gradient-to-r from-purple-300/10 to-blue-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
+        <div className="bg-gradient-to-r from-rose-300/10 to-red-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
           <h2 className="text-4xl font-bold mb-6">
             Let’s Work Together
           </h2>
@@ -455,5 +620,5 @@ export default function App() {
         </div>
       </section>
     </div>
-  )
+  );
 }
