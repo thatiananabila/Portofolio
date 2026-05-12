@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 import gmuCert from './assets/certificates/gmu.png';
 import gaoCert from './assets/certificates/gao.png';
@@ -646,36 +647,76 @@ export default function App() {
 
 
       {/* CONTACT */}
-      <section className="px-8 md:px-20 py-24">
-        <div className="bg-gradient-to-r from-rose-300/10 to-red-300/10 border border-zinc-800 rounded-[40px] p-12 text-center backdrop-blur-xl">
-          <h2 className="text-4xl font-bold mb-6">
-            Let’s Work Together
-          </h2>
+{/* CONTACT */}
+<section className="px-8 md:px-20 py-24">
 
-          <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
-            Open to internship opportunities, professional collaborations,
-and digital project development in technology and design.
-          </p>
+  <div className="bg-gradient-to-r from-rose-300/10 to-red-300/10 border border-zinc-800 rounded-[40px] p-14 text-center backdrop-blur-xl">
 
-          <div className="flex justify-center gap-4 flex-wrap">
-            <a
-  href="mailto:thati4na@gmail.com"
-  className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition duration-300"
->
-  Email Me
-</a>
+    <h2 className="text-5xl font-bold mb-8">
+      Let’s Work Together
+    </h2>
 
-            <a
-  href="https://id.linkedin.com/in/thatiananabila"
-  target="_blank"
-  rel="noreferrer"
-  className="border border-zinc-700 px-8 py-3 rounded-full hover:bg-zinc-900 transition duration-300"
->
-  LinkedIn
-</a>
-          </div>
+    <p className="text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto mb-14">
+      Terbuka untuk peluang magang, kolaborasi profesional,
+      serta pengembangan project di bidang teknologi dan desain digital.
+    </p>
+
+    {/* ICONS */}
+    <div className="flex justify-center gap-10 mb-16">
+
+      {/* EMAIL */}
+      <div className="flex flex-col items-center gap-4">
+
+        <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
+
+          <FaEnvelope className="text-5xl text-zinc-300" />
+
         </div>
-      </section>
+
+        <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
+          Email
+        </p>
+
+      </div>
+
+      {/* LINKEDIN */}
+      <a
+        href="https://id.linkedin.com/in/thatiananabila"
+        target="_blank"
+        rel="noreferrer"
+        className="flex flex-col items-center gap-4"
+      >
+
+        <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
+
+          <FaLinkedin className="text-5xl text-zinc-300" />
+
+        </div>
+
+        <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
+          LinkedIn
+        </p>
+
+      </a>
+
+    </div>
+
+    {/* EMAIL TEXT */}
+    <div>
+
+      <p className="tracking-[0.3em] uppercase text-zinc-500 text-sm mb-5">
+        Atau kirim pesan ke:
+      </p>
+
+      <h3 className="text-4xl md:text-5xl font-bold text-white break-all">
+        thati4na@gmail.com
+      </h3>
+
+    </div>
+
+  </div>
+
+</section>
     </div>
   );
 }
