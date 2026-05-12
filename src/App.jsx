@@ -449,15 +449,35 @@ export default function App() {
         PT. Garuda Metal Utama
       </p>
 
-      <ul className="text-zinc-400 text-sm leading-relaxed mb-10 space-y-3">
-        <li>
-          Digitalisasi sistem Quality in Process (QiP) ke ERP PowerBuilder.
-        </li>
+<ul className="space-y-4 mb-10">
 
-        <li>
-          Monitoring kualitas produksi via dashboard Machine Trend.
-        </li>
-      </ul>
+  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
+    <span className="text-rose-300 mt-1">✦</span>
+
+    <span>
+      Digitalisasi sistem <b className="text-white">Quality in Process (QiP)</b>
+      ke ERP berbasis <b className="text-white">PowerBuilder</b>.
+    </span>
+  </li>
+
+  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
+    <span className="text-rose-300 mt-1">✦</span>
+
+    <span>
+      Monitoring kualitas produksi melalui dashboard
+      <b className="text-white"> Machine Trend</b>.
+    </span>
+  </li>
+
+  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
+    <span className="text-rose-300 mt-1">✦</span>
+
+    <span>
+      Membantu proses analisis data dan pelaporan quality control.
+    </span>
+  </li>
+
+</ul>
 
       <a
         href={gmuCert}
@@ -490,15 +510,35 @@ export default function App() {
         GAOTek Inc. (Remote)
       </p>
 
-      <ul className="text-zinc-400 text-sm leading-relaxed mb-10 space-y-3">
-        <li>
-          Riset pasar global dan analisis tren industri teknologi.
-        </li>
+<ul className="space-y-4 mb-10">
 
-        <li>
-          Dipromosikan menjadi Squad Leader untuk manajemen tim intern.
-        </li>
-      </ul>
+  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
+    <span className="text-rose-300 mt-1">✦</span>
+
+    <span>
+      Melakukan riset pasar global dan analisis tren industri teknologi.
+    </span>
+  </li>
+
+  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
+    <span className="text-rose-300 mt-1">✦</span>
+
+    <span>
+      Berkolaborasi dalam pengelolaan data produk dan sourcing.
+    </span>
+  </li>
+
+  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
+    <span className="text-rose-300 mt-1">✦</span>
+
+    <span>
+      Dipromosikan menjadi
+      <b className="text-white"> Squad Leader</b>
+      untuk memimpin dan mengelola tim intern.
+    </span>
+  </li>
+
+</ul>
 
       <a
         href={gaoCert}
