@@ -418,140 +418,144 @@ export default function App() {
 <section className="px-8 md:px-20 py-20 bg-[#0a0a0a]">
 
   {/* INTERNSHIP */}
-  <div className="flex items-center justify-between mb-10">
-    <h2 className="text-3xl font-bold text-rose-300">
-      Internship Experience
-    </h2>
+  {/* INTERNSHIP */}
+<div className="flex items-center justify-between mb-8">
+  <h2 className="text-3xl font-bold text-rose-300">
+    Internship Experience
+  </h2>
 
-    <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
-  </div>
+  <div className="h-[1px] bg-zinc-800 flex-1 ml-6" />
+</div>
 
-  <div className="grid md:grid-cols-2 gap-8 mb-20">
+<div className="grid md:grid-cols-2 gap-6 mb-14">
 
-    {/* GMU */}
-    <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-10 hover:border-rose-400/50 transition-all duration-500">
+  {/* GMU */}
+  <div className="group bg-zinc-900/30 border border-zinc-800 rounded-[26px] p-7 hover:border-rose-400/40 transition-all duration-300">
 
-      <div className="flex justify-between items-start mb-8">
-        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-[10px] font-mono uppercase">
-          Ags 2025 - Nov 2025
-        </span>
+    <div className="flex justify-between items-center mb-6">
 
-        <div className="text-2xl opacity-50 group-hover:opacity-100 transition">
-          ⚙️
-        </div>
+      <span className="px-4 py-1 bg-rose-400/10 text-rose-300 rounded-full text-[10px] uppercase tracking-widest">
+        Ags 2025 — Nov 2025
+      </span>
+
+      <div className="text-lg opacity-60">
+        ⚙️
       </div>
 
-      <h3 className="text-2xl font-bold mb-1 text-white">
-        IT Support - Programmer
-      </h3>
-
-      <p className="text-rose-300/80 mb-6 font-medium text-lg italic">
-        PT. Garuda Metal Utama
-      </p>
-
-<ul className="space-y-4 mb-10">
-
-  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
-    <span className="text-rose-300 mt-1">✦</span>
-
-    <span>
-      Digitalisasi sistem <b className="text-white">Quality in Process (QiP)</b>
-      ke ERP berbasis <b className="text-white">PowerBuilder</b>.
-    </span>
-  </li>
-
-  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
-    <span className="text-rose-300 mt-1">✦</span>
-
-    <span>
-      Monitoring kualitas produksi melalui dashboard
-      <b className="text-white"> Machine Trend</b>.
-    </span>
-  </li>
-
-  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
-    <span className="text-rose-300 mt-1">✦</span>
-
-    <span>
-      Membantu proses analisis data dan pelaporan quality control.
-    </span>
-  </li>
-
-</ul>
-
-      <a
-        href={gmuCert}
-        target="_blank"
-        rel="noreferrer"
-        className="block w-full py-4 bg-zinc-800 text-white text-center rounded-2xl font-bold text-sm hover:bg-white hover:text-black transition duration-300"
-      >
-        View Full Certificate ↗
-      </a>
     </div>
 
-    {/* GAOTEK */}
-    <div className="group bg-zinc-900/40 border border-zinc-800 rounded-[32px] p-10 hover:border-rose-400/50 transition-all duration-500">
+    <h3 className="text-xl font-semibold text-white mb-1">
+      IT Support - Programmer
+    </h3>
 
-      <div className="flex justify-between items-start mb-8">
-        <span className="px-4 py-1 bg-rose-400/10 text-rose-400 rounded-full text-[10px] font-mono uppercase">
-          Oct 2024 - Jan 2025
+    <p className="text-rose-200/70 text-sm italic mb-6">
+      PT. Garuda Metal Utama
+    </p>
+
+    <ul className="space-y-3 text-sm text-zinc-400 leading-relaxed mb-8">
+
+      <li className="flex gap-3">
+        <span className="text-rose-300">✦</span>
+
+        <span>
+          Digitalisasi sistem Quality in Process (QiP)
+          ke ERP PowerBuilder.
         </span>
+      </li>
 
-        <div className="text-2xl opacity-50 group-hover:opacity-100 transition">
-          🚀
-        </div>
-      </div>
+      <li className="flex gap-3">
+        <span className="text-rose-300">✦</span>
 
-      <h3 className="text-2xl font-bold mb-1 text-white">
-        Product Sourcing - Squad Leader
-      </h3>
+        <span>
+          Monitoring kualitas produksi melalui dashboard
+          Machine Trend.
+        </span>
+      </li>
 
-      <p className="text-rose-300/80 mb-6 font-medium text-lg italic">
-        GAOTek Inc. (Remote)
-      </p>
+      <li className="flex gap-3">
+        <span className="text-rose-300">✦</span>
 
-<ul className="space-y-4 mb-10">
+        <span>
+          Analisis data dan pelaporan quality control.
+        </span>
+      </li>
 
-  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
-    <span className="text-rose-300 mt-1">✦</span>
+    </ul>
 
-    <span>
-      Melakukan riset pasar global dan analisis tren industri teknologi.
-    </span>
-  </li>
-
-  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
-    <span className="text-rose-300 mt-1">✦</span>
-
-    <span>
-      Berkolaborasi dalam pengelolaan data produk dan sourcing.
-    </span>
-  </li>
-
-  <li className="flex gap-3 text-zinc-400 text-sm leading-relaxed">
-    <span className="text-rose-300 mt-1">✦</span>
-
-    <span>
-      Dipromosikan menjadi
-      <b className="text-white"> Squad Leader</b>
-      untuk memimpin dan mengelola tim intern.
-    </span>
-  </li>
-
-</ul>
-
-      <a
-        href={gaoCert}
-        target="_blank"
-        rel="noreferrer"
-        className="block w-full py-4 bg-zinc-800 text-white text-center rounded-2xl font-bold text-sm hover:bg-white hover:text-black transition duration-300"
-      >
-        View Full Certificate ↗
-      </a>
-    </div>
+    <a
+      href={gmuCert}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sm text-rose-300 hover:text-white transition"
+    >
+      View Certificate ↗
+    </a>
 
   </div>
 
+  {/* GAOTEK */}
+  <div className="group bg-zinc-900/30 border border-zinc-800 rounded-[26px] p-7 hover:border-rose-400/40 transition-all duration-300">
+
+    <div className="flex justify-between items-center mb-6">
+
+      <span className="px-4 py-1 bg-rose-400/10 text-rose-300 rounded-full text-[10px] uppercase tracking-widest">
+        Oct 2024 — Jan 2025
+      </span>
+
+      <div className="text-lg opacity-60">
+        🚀
+      </div>
+
+    </div>
+
+    <h3 className="text-xl font-semibold text-white mb-1">
+      Product Sourcing - Squad Leader
+    </h3>
+
+    <p className="text-rose-200/70 text-sm italic mb-6">
+      GAOTek Inc. (Remote)
+    </p>
+
+    <ul className="space-y-3 text-sm text-zinc-400 leading-relaxed mb-8">
+
+      <li className="flex gap-3">
+        <span className="text-rose-300">✦</span>
+
+        <span>
+          Riset pasar global dan analisis tren industri teknologi.
+        </span>
+      </li>
+
+      <li className="flex gap-3">
+        <span className="text-rose-300">✦</span>
+
+        <span>
+          Pengelolaan data produk dan sourcing.
+        </span>
+      </li>
+
+      <li className="flex gap-3">
+        <span className="text-rose-300">✦</span>
+
+        <span>
+          Dipromosikan menjadi Squad Leader untuk memimpin tim intern.
+        </span>
+      </li>
+
+    </ul>
+
+    <a
+      href={gaoCert}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sm text-rose-300 hover:text-white transition"
+    >
+      View Certificate ↗
+    </a>
+
+  </div>
+
+</div>
   {/* TOP CERTIFICATIONS */}
   <div className="flex items-center justify-between mb-10">
     <h2 className="text-3xl font-bold text-rose-300">
