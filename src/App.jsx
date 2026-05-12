@@ -661,60 +661,64 @@ export default function App() {
     </p>
 
     {/* ICONS */}
-    <a
-  href="mailto:thati4na@gmail.com"
-  className="flex flex-col items-center gap-4"
->
+{/* ICONS */}
+<div className="flex justify-center gap-10 mb-16">
 
-  <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
+  {/* EMAIL */}
+  <a
+    href="mailto:thati4na@gmail.com"
+    className="flex flex-col items-center gap-4"
+  >
 
-    <FaEnvelope className="text-5xl text-zinc-300" />
+    <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
 
-  </div>
+      <FaEnvelope className="text-5xl text-zinc-300" />
 
-  <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
-    Email
+    </div>
+
+    <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
+      Email
+    </p>
+
+  </a>
+
+  {/* LINKEDIN */}
+  <a
+    href="https://id.linkedin.com/in/thatiananabila"
+    target="_blank"
+    rel="noreferrer"
+    className="flex flex-col items-center gap-4"
+  >
+
+    <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
+
+      <FaLinkedin className="text-5xl text-zinc-300" />
+
+    </div>
+
+    <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
+      LinkedIn
+    </p>
+
+  </a>
+
+</div>
+
+ {/* EMAIL TEXT */}
+<div>
+
+  <p className="tracking-[0.3em] uppercase text-zinc-500 text-sm mb-5">
+    Atau kirim pesan ke:
   </p>
 
-</a>
+  <a
+    href="mailto:thati4na@gmail.com"
+    className="text-4xl md:text-5xl font-bold text-white break-all hover:text-rose-300 transition"
+  >
+    thati4na@gmail.com
+  </a>
 
-      {/* LINKEDIN */}
-      <a
-        href="https://id.linkedin.com/in/thatiananabila"
-        target="_blank"
-        rel="noreferrer"
-        className="flex flex-col items-center gap-4"
-      >
-
-        <div className="w-28 h-28 rounded-[30px] border border-zinc-800 bg-zinc-900/40 flex items-center justify-center hover:border-rose-300 transition duration-300">
-
-          <FaLinkedin className="text-5xl text-zinc-300" />
-
-        </div>
-
-        <p className="tracking-[0.2em] text-sm text-zinc-500 uppercase">
-          LinkedIn
-        </p>
-
-      </a>
-
-    </div>
-
-    {/* EMAIL TEXT */}
-    <div>
-
-      <p className="tracking-[0.3em] uppercase text-zinc-500 text-sm mb-5">
-        Atau kirim pesan ke:
-      </p>
-
-      <a
-  href="mailto:thati4na@gmail.com"
-  className="text-4xl md:text-5xl font-bold text-white break-all hover:text-rose-300 transition"
->
-  thati4na@gmail.com
-</a>
-
-    </div>
+</div>
 
   </div>
 
